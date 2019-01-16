@@ -1,6 +1,6 @@
 {
   "name": "react-native-ckeditor",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "React Native CKEditor component with no native code for React Native apps built using WebView",
   "main": "index.js",
   "scripts": {
