@@ -1,0 +1,20 @@
+{
+  "name": "react-native-ckeditor",
+  "version": "1.0.0",
+  "description": "React Native CKEditor component with no native code for React Native apps built using WebView",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "ff"
+  },
+  "keywords": [
+    "react",
+    "native",
+    "ckeditor"
+  ],
+  "author": "Vitaly Liber",
+  "license": "ISC"
+}

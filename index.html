@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>CKEditor</title>
+    <script src="./ckeditor/ckeditor.js"></script>
+    <script>
+      document.addEventListener("message", function(data) {
+        console.log(data.data);
+        CKEDITOR.instances.editor1.setData( data.data, function()
+        {
+          this.checkDirty();  // true
+        });
+      });
+    </script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+</head>
+
+<body>
+<textarea name="editor1"></textarea>
+<script>
+  CKEDITOR.replace('editor1', {
+    on: {
+      'instanceReady': function (evt) { evt.editor.execCommand('maximize'); }
+    }
+  });
+  CKEDITOR.instances.editor1.on('change', function() {
+    // alert(CKEDITOR.instances.editor1.getData())
+
+    try {
+      window.postMessage(CKEDITOR.instances.editor1.getData(), '*')
+    }
+
+    catch (e) {
+      alert(e)
+    }
+  });
+</script>
+</body>
+
+</html>
