@@ -11,7 +11,7 @@ yarn add react-native-ckeditor
 or
 
 ```
-npm install --save react-native-webview-quilljs
+npm install --save react-native-ckeditor
 ```
 
 and then
