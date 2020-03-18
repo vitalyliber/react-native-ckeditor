@@ -1,5 +1,6 @@
 import React from 'react';
-import { ActivityIndicator, Alert, StyleSheet, View, WebView } from 'react-native';
+import { ActivityIndicator, Alert, StyleSheet, View } from 'react-native';
+import { WebView } from 'react-native-webview';
 
 const webapp = require('./index.html');
 
